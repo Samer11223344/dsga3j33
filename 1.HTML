@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة تسجيل الدخول</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        input[type="email"], input[type="password"] {
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>صفحة تسجيل الدخول</h2>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="البريد الإلكتروني" required><br>
+            <input type="password" id="password" placeholder="كلمة المرور" required><br>
+            <button type="button" class="btn" onclick="login()">تسجيل الدخول</button>
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // بيانات تسجيل الدخول الصحيحة
+            var correctEmail = "1re2yyyshs@gmail.com";
+            var correctPassword = "12qwasZx";
+
+            // التحقق من صحة بيانات تسجيل الدخول
+            if (email === correctEmail && password === correctPassword) {
+                // إعادة توجيه المستخدم في حالة صحة بيانات تسجيل الدخول
+                window.location.href = "welcome.html";
+            } else {
+                // إظهار رسالة خطأ في حالة عدم صحة بيانات تسجيل الدخول
+                alert("خطأ في بيانات تسجيل الدخول. يرجى التحقق من البريد الإلكتروني وكلمة المرور.");
+            }
+        }
+    </script>
+</body>
+</html>

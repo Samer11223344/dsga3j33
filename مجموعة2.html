@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المشروع</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .participant-box {
+            width: 150px;
+            margin: 10px;
+        }
+        .participant {
+            width: 100px;
+            height: 100px;
+            background-color: #2b2e53;
+            color: #ffffff;
+            border-radius: 50%;
+            line-height: 100px;
+            font-size: 20px;
+            margin: 0 auto;
+        }
+        .exit-button {
+            background-color: #ff0000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            display: block;
+            margin-top: 20px;
+        }
+        .exit-button:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="participant-box">
+            <div class="participant">محمد</div>
+        </div>
+        <div class="participant-box">
+            <div class="participant">علي</div>
+        </div>
+        <div class="participant-box">
+            <div class="participant">عبد العزيز</div>
+        </div>
+        <div class="participant-box">
+            <div class="participant">تركي</div>
+        </div>
+
+        <div class="participant-box">
+            <div class="participant">سلطان</div>
+        </div>
+        <a href="welcome.html" class="exit-button">خروج من المشروع</a>
+    </div>
+</body>
+</html>
